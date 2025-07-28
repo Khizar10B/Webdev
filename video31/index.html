@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .boxes {
+            width: 44px;
+            height: 44px;
+            background-color: silver;
+        }
+        body{
+            background-color: rgb(219, 142, 41);
+            padding-left: 15px;
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                background-color: red;
+            }
+        }
+        @media only screen and (orientation: portrait){
+            body{
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>hey I am red</div>
+    <div class="boxes">
+        <div class="box">
+
+        </div>
+
+    
+    </div>
+</body>
+</html>

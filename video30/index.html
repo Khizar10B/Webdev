@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        * {
+            padding: 0;
+            padding-left: 5px;
+
+
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        :root {
+            --color: rgb(248, 0, 41);
+            --secolor: purple;
+        }
+        /* :root is used for adding your own variables */
+
+        .nav {
+            color: var(--color);
+        }
+
+        .container {
+            color: var(--secolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>home</li>
+            <li>timings</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod rem aut quam! Expedita quisquam, fugit, ipsum
+        repudiandae cupiditate accusantium tempore, in sit voluptates quaerat distinctio?
+    </div>
+</body>
+
+</html>
